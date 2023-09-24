@@ -1,6 +1,6 @@
 # Hello!
 
-这里是wyr的个人网站 <https://Wang-Y-R.github.io>
+这里是wyr的个人网站 <https://Wang-Y-R.github.io/wyrwebsite>
 
 - 通过主题和目录以打开文章
     - PC端 在上方标签栏选择主题 在左侧目录选择文章

@@ -7,6 +7,8 @@ site_description: 个人网站
 
 # [Navigtion]
 nav:
+  - 首页 :
+    - INDEX/index.md
   - 笔记 :
     - STUDY/index.md
     - Linux :
@@ -36,11 +38,3 @@ theme:
     - search.highlight # 搜索出的文章关键词加入高亮
     - content.code.copy # 可以通过按钮复制代码
     - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
-  language: zh # 一些提示性的文字会变成中文
-  icon:
-    repo: fontawesome/brands/github
-## [top-right corner]
-repo_url: https://github.com/Wang-Y-R # 右上角点击跳转的链接
-repo_name: Wang-Y-R.github.io # 右上角的名字
-## [bottom-left corner]
-copyright: wyr CC-BY-4.0 # 左下角的版权声明
