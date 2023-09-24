@@ -20,7 +20,7 @@ nav:
   - 测试页面与日志 :
     - 测试页面 : TEST/test.md
     - 开发日志 : LOG\log.md
-w
+
 theme:
   name: material
   palette:
