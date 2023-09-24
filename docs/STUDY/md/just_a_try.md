@@ -176,15 +176,15 @@ TodoList:
 |A|B|C|
 |C|D|E|
 
-## 图片[复制粘贴]
+## 图片
+方法一：
+[复制粘贴]
 
-```
-![图片](图片的位置)
-```
+方法二：
+html链接(推荐,最好用也最麻烦)
+<img src="../../../TEST/test/莞中校徽.jpg" alt="莞中logo" style="width: 60%; height: 60%px;">
 
-
-![[屏幕截图 2023-09-03 202931.png]]
-
+``<img src="../../../TEST/test/莞中校徽.jpg" alt="莞中logo" style="width: 60%; height: 60%px;">``
 
 ## 分割线[三个"*"或者"-"或"_"并加回车]
 

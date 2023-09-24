@@ -2,6 +2,12 @@
 
 ## 先来看看图片能否上传!
 
-![](./test/莞中校徽.jpg){width="100"}
-![](./test/校标-白底.png){width="50%"}
-![](./test/软院-白底.png){width="30%"}
+<img src="../test/莞中校徽.jpg" alt="莞中logo" style="width: 600px; height: 600px;">
+
+<img src="../test/校标-白底.png" alt="南大logo" style="width: 300px; height: 300px;">
+<img src="../test/校标-白底.png" alt="南大logo" style="width: 300px; height: 300px;">
+
+<img src="../test/软院-白底.png" alt="软院logo" style="width: 150px; height: 150px;">
+<img src="../test/软院-白底.png" alt="软院logo" style="width: 150px; height: 150px;">
+<img src="../test/软院-白底.png" alt="软院logo" style="width: 150px; height: 150px;">
+<img src="../test/软院-白底.png" alt="软院logo" style="width: 150px; height: 150px;">
