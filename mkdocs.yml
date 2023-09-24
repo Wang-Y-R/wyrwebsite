@@ -13,6 +13,12 @@ nav:
     - STUDY/index.md
     - Linux :
       - Linux命令 : STUDY/Linux/Linux命令.md
+    - Windos Powershell :
+      - Windoes powershell : STUDY\windows_powershell\Manual.md
+    - Markdown :
+      - Markdown基础操作 : STUDY\md\just_a_try.md
+  - 测试页面 :
+    - TEST/test.md
 
 theme:
   name: material
