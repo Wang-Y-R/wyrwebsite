@@ -1,4 +1,7 @@
 基础的windows powershell命令
+
+[TOC]
+
 # 命令组成
 
 执行什么命令 + 如何执行
