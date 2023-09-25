@@ -17,6 +17,8 @@ nav:
       - Windows powershell : STUDY\windows_powershell\Manual.md
     - Markdown :
       - Markdown基础操作 : STUDY\md\just_a_try.md
+  - 随想 :
+    - CAPRICE/caprice.md
   - 测试页面与日志 :
     - 测试页面 : TEST/test.md
     - 开发日志 : LOG\log.md
