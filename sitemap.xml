@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://wang-y-r.github.io/wyrwebsite/INDEX/CAPRICE/caprice/</loc>
+         <lastmod>2023-09-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/INDEX/INDEX/</loc>
-         <lastmod>2023-09-24</lastmod>
+         <lastmod>2023-09-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/INDEX/LOG/log/</loc>
-         <lastmod>2023-09-24</lastmod>
+         <lastmod>2023-09-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/INDEX/STUDY/</loc>
-         <lastmod>2023-09-24</lastmod>
+         <lastmod>2023-09-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/INDEX/STUDY/Linux/Linux%E5%91%BD%E4%BB%A4/</loc>
-         <lastmod>2023-09-24</lastmod>
+         <lastmod>2023-09-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/INDEX/STUDY/md/just_a_try/</loc>
-         <lastmod>2023-09-24</lastmod>
+         <lastmod>2023-09-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/INDEX/STUDY/windows_powershell/Manual/</loc>
-         <lastmod>2023-09-24</lastmod>
+         <lastmod>2023-09-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/INDEX/TEST/test/</loc>
-         <lastmod>2023-09-24</lastmod>
+         <lastmod>2023-09-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
