@@ -28,9 +28,21 @@ nav:
 theme:
   name: material
   palette:
-    - scheme: default # 日间模式,夜间模式：slate
-      primary: orange # 导航栏颜色
+    # Palette toggle for light mode
+    - scheme: default
+      primary: amber # 导航栏颜色
       accent: blue # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: amber # 导航栏颜色
+      accent: blue # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  
   features:
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
@@ -39,4 +51,4 @@ theme:
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - content.code.copy # 可以通过按钮复制代码
-    - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
+    - content.action.edit # 点amber击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
