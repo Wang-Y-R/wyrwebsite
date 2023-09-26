@@ -17,11 +17,13 @@ nav:
       - Windows powershell : STUDY\windows_powershell\Manual.md
     - Markdown :
       - Markdown基础操作 : STUDY\md\just_a_try.md
+    - Vi/Vim编辑器 :
+      - vi/vim编辑器 : STUDY\Vim_Vi\Vim_Vi编辑器.md
   - 随想/日记 :
     - CAPRICE/caprice.md
   - 测试页面与日志 :
     - 测试页面 : TEST/test.md
-    - 开发日志 : LOG\log.md
+    - 日志 : LOG\log.md
 
 theme:
   name: material
