@@ -898,41 +898,26 @@
                   
 
 
-<div class="toc">
-<ul>
-<li><a href="#ls">ls命令</a></li>
-<li><a href="#_1">路径相关</a><ul>
-<li><a href="#cd">路径和CD</a></li>
-</ul>
-</li>
-<li><a href="#_2">创建文件夹</a></li>
-<li><a href="#touch">touch 创建文件</a></li>
-<li><a href="#cat-more">cat more 查看文件内容</a></li>
-<li><a href="#cp">cp命令复制</a></li>
-<li><a href="#mv">mv命令移动/重命名</a></li>
-<li><a href="#rm">rm命令 删除</a></li>
-<li><a href="#whichfind">which/find命令</a></li>
-</ul>
-</div>
 <h1 id="ls">ls命令</h1>
 <p>ls  list<code>[-a -l -h]</code> <code>[路径]</code>
-- -a -all 显示隐藏文件
-- -l -list以竖向列表展现内容与更多信息
-- -h 列出文件大小(添加单位) 与其他命令一起用
-- -s 列出文件大小以k为单位</p>
+- 选项 -a -all 显示隐藏文件
+- 选项-l -list以竖向列表展现内容与更多信息
+- 选项-h 列出文件大小(添加单位) 与其他命令一起用
+- 选项-s 列出文件大小以k为单位</p>
 <blockquote>
 <p>可以组合如 -al -la 或-l -a</p>
 </blockquote>
 <h1 id="_1">路径相关</h1>
 <h2 id="cd">路径和CD</h2>
 <ul>
-<li>工作路径</li>
-<li><em>绝对路径</em>(不管字符串在哪里都表示同一个路径)<blockquote></blockquote>
-</li>
 <li>
-<p><em>相对路径</em>(在不同情境下表示不同路径)</p>
+<p>工作路径</p>
 <blockquote>
-<p>如<code>.\XXX</code> 表示当前工作路径下的XXX文件夹 <code>.</code>指工作路径</p>
+<ul>
+<li><em>绝对路径</em>(不管字符串在哪里都表示同一个路径)</li>
+<li><em>相对路径</em>(在不同情境下表示不同路径)</li>
+<li>如<code>.\XXX</code> 表示当前工作路径下的XXX文件夹 <code>.</code>指工作路径</li>
+</ul>
 </blockquote>
 </li>
 <li>
@@ -949,11 +934,9 @@
 </ul>
 <h1 id="_2">创建文件夹</h1>
 <ul>
+<li>mkdir <code>[-p]</code> 路径</li>
 <li>
-<p>mkdir <code>[-p]</code>路径</p>
-<blockquote>
-<p>-p 用于创建多级目录<code>虚空生成</code></p>
-</blockquote>
+<p>选项 -p 用于创建多级目录<code>虚空生成</code></p>
 </li>
 <li>
 <p>rmdir 路径 删除文件夹</p>
@@ -971,7 +954,7 @@
 <h1 id="cp">cp命令复制</h1>
 <ul>
 <li>cp <code>[r]</code>  参数1 参数2</li>
-<li>-r 表示复制文件夹</li>
+<li>选项 -r 表示复制文件夹</li>
 <li>参数1 表示被复制的文件路径</li>
 <li>参数2 表示复制去的路径</li>
 </ul>
@@ -984,24 +967,80 @@
 <h1 id="rm">rm命令 删除</h1>
 <ul>
 <li>rm <code>[-r][-f]</code>  参数无限</li>
-<li>-r 删除文件夹</li>
-<li>-f 强制删除 不显示确认信息</li>
-<li>参数为要删除的文件的路径</li>
+<li>选项 -r 删除文件夹</li>
+<li>选项 -f 强制删除 不显示确认信息</li>
+<li>参数 为要删除的文件的路径</li>
 </ul>
-<blockquote>
-<p>通配符 <code>*</code>  匹配任意内容
-test<code>*</code>表示任何以test开头内容
-<code>*</code>test表示任何以test结尾内容
-<code>*</code>test<code>*</code>表示含有test的内容</p>
-</blockquote>
 <h1 id="whichfind">which/find命令</h1>
 <ul>
-<li>which 命令 查找命令文件所在位置</li>
-<li>find  起始路径 -name  + "" "被查找文件名"  可加通配符</li>
+<li>which <code>命令</code>    查找命令文件所在位置</li>
+<li>find  起始路径 -name  + <code>内容"被查找文件名"</code> 可加通配符</li>
 <li>find 起始路径  -size  +或- n<code>[KMG]</code>按文件大小搜索<blockquote>
 <p>+/-表示大于或小于 n表示数字 KMG表示单位 kb mb gb</p>
 </blockquote>
 </li>
+</ul>
+<h1 id="grep">grep命令</h1>
+<ul>
+<li>grep <code>[-n]</code> <code>"内容"</code> <code>路径/内容</code></li>
+<li>选项 -n ,可显示查找内容的行号</li>
+<li>参数 内容 即为查找的字符</li>
+<li>参数 路径 即为查找的文件的路径        <strong><em>可作为内容输入端口</em></strong></li>
+</ul>
+<h1 id="wc">wc命令</h1>
+<ul>
+<li>wc <code>[-c -m -l -w] 路径/内容</code></li>
+<li>选项 -c 统计bytes数量</li>
+<li>选项 -m (message) 统计字符数量</li>
+<li>选项 -l  (line)统计行数</li>
+<li>选项 -w (word)统计单词数量(本质是按空格划分)</li>
+<li>参数 路径           <strong><em>可作为内容输入端口</em></strong></li>
+</ul>
+<h1 id="_3">通配符</h1>
+<ul>
+<li>匹配任意<code>内容</code></li>
+<li><code>test*</code>表示任何以test开头内容</li>
+<li><code>*test</code>表示任何以test结尾内容</li>
+<li><code>*test*</code>表示含有test的内容</li>
+</ul>
+<h1 id="_4">管道符"|"</h1>
+<ul>
+<li>可传递左边输出内容,填充到右边的参数位置</li>
+<li>例子 : ls -l | grep 123 <code>左边输出</code> 查找高亮当前目录下的列表中的出现123</li>
+<li>例子: ls -l | wc -l  <code>左边输出</code> 显示当前路径列表行数,即为文件个数
+可嵌套</li>
+<li>cat txt.txt | grep 666 | wc -l  等等</li>
+</ul>
+<h1 id="echo">echo命令输出内容</h1>
+<ul>
+<li>echo <code>内容</code></li>
+</ul>
+<h1 id="_5">反引号 <code>"``"</code></h1>
+<ul>
+<li>将被包围的内容当作命令处理</li>
+<li>例子 echo pwd 与echo ’pwd‘  类似转义字符</li>
+</ul>
+<h1 id="_6">重定向符&gt;与&gt;&gt;</h1>
+<ul>
+<li>
+<blockquote>
+<p>,将左侧命令的结果,<strong><em>覆盖</em></strong>写入到右侧文件中</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<blockquote>
+<p>,将左侧命令结果,<strong><em>追加</em></strong>写入到右边文件中</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h1 id="tail">tail命令</h1>
+<ul>
+<li>tail <code>[-f -num] 路径</code></li>
+<li>选项 -f (follow)表示持续跟踪 <strong><em>一般多窗口持续跟踪某文件修改内容</em></strong> 结束快捷键ctrl + c</li>
+<li>选项 -num,填写具体数字,查看尾部多少行,不填默认10行</li>
+<li>参数 路径,表示被跟踪文件路径</li>
 </ul>
 
 
