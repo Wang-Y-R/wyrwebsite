@@ -10,3 +10,7 @@ China （Atomic Era）
 <audio controls="controls" loop="loop">
 	<source src="..\test\China (The Atomic Era).mp3" type="audio/mp3"></source>
 </audio>
+
+## 试试作法
+
+<img src="..\test\微信图片_20230928205756.jpg" alt="作法logo" style="width: 500px; height: 600px;">w
