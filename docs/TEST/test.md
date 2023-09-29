@@ -13,4 +13,4 @@ China （Atomic Era）
 
 ## 试试作法
 
-<img src="..\test\微信图片_20230928205756.jpg" alt="作法logo" style="width: 500px; height: 600px;">w
+应老姐要求，该图片已经下架.jpg
