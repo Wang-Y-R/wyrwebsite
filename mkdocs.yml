@@ -11,6 +11,8 @@ nav:
     - INDEX/index.md
   - 笔记 :
     - STUDY/index.md
+    - C Progaming Language :
+      - STUDY/CPL/C_Progaming_Lauguage.md
     - Linux :
       - Linux命令 : STUDY/Linux/Linux命令.md
     - Windows Powershell :
