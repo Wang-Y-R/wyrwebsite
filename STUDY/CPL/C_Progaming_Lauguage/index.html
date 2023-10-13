@@ -1117,22 +1117,22 @@ target_link_library(admin.c m)
 <p>效果简析:读入一行字符串(包括空格,不包括换行符),并清除缓冲区的换行符.</p>
 </blockquote>
 <p>从输入缓冲区中读取一个字符串存储到字符指针变量 str 所指向的内存空间，并且<strong><em>可以直接输入带空格的字符串</em></strong>。</p>
-<p>``` c
-include <stdio.h>
+<pre><code class="language-c">include &lt;stdio.h&gt;
 int main(void)
 {
     char str[30];
     char *string = str;  //一定要先将指针变量初始化
-    printf("请输入字符串：");
+    printf(&quot;请输入字符串：&quot;);
     gets(string);  //也可以写成gets(str);
-    printf("%s\n", string);  //输出参数是已经定义好的“指针变量名”
+    printf(&quot;%s\n&quot;, string);  //输出参数是已经定义好的“指针变量名”
     return 0;
-}</p>
-<p>/<strong><em>*</em></strong><strong><em>*</em></strong><em>
-</em>输入:I LOVE C *
-<em>输出:I LOVE C *
-</em><strong><em>*</em></strong><strong><em>*</em></strong>*/
- ```</p>
+}
+
+/***************
+*输入:I LOVE C *
+*输出:I LOVE C *
+****************/
+</code></pre>
 <p>此外，关于使用 gets() 函数需要注意：使用 gets() 时，<strong><em>系统会将最后“敲”的换行符从缓冲区中取出来，然后丢弃，所以缓冲区中不会遗留换行符</em></strong>。这就意味着，如果前面使用过 gets()，而后面又要从键盘给字符变量赋值的话就不需要吸收回车清空缓冲区了，因为缓冲区的回车已经被 gets() 取出来扔掉了。</p>
 <h3 id="fgets">fgets函数</h3>
 <p><code>char *fgets(char *restrict str, int size, FILE *restrict stream)）</code></p>
