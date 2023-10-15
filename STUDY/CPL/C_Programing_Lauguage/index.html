@@ -12,7 +12,7 @@
         <meta name="author" content="wyr">
       
       
-        <link rel="canonical" href="https://wang-y-r.github.io/wyrwebsite/STUDY/CPL/C_Progaming_Lauguage/">
+        <link rel="canonical" href="https://wang-y-r.github.io/wyrwebsite/STUDY/CPL/C_Programing_Lauguage/">
       
       
         <link rel="prev" href="../../">
@@ -462,7 +462,7 @@
             
   
   <span class="md-ellipsis">
-    C Progaming Language
+    C Programing Language
   </span>
   
 
@@ -472,7 +472,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
-            C Progaming Language
+            C Programing Language
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -558,6 +558,40 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    字符分类函数（返回0/1）(常用)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    字符大小写映射函数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+     (会用的)
+  </a>
   
 </li>
       
@@ -1073,6 +1107,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    字符分类函数（返回0/1）(常用)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    字符大小写映射函数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+     (会用的)
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1148,6 +1216,48 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 <p><code>fgets()</code>函数的最大读取大小是其“<code>第二个参数减1</code>”，这是由于字符串是以<code>’\0’</code>为结束符的，<code>fgets()</code>为了保证输入内容的<code>字符串格式</code>，当输入的数据大小超过了<code>第二个参数</code>指定的大小的时候，<code>fgets()</code>会仅仅读取前面的“<code>第二个参数减1</code>”个字符，而预留<code>1个字符</code>的空间来存储字符串结束符<code>’\0’</code>。</p>
 <p>重点:与gets不同,当fgets读取的字符数小于n-1,则\n也会被读入进字符串内作为一个普通字符,printf时会打印回车.</p>
 </blockquote>
+<h2 id="_3"><ctype.h></h2>
+<h3 id="01">字符分类函数（返回0/1）(常用)</h3>
+<ul>
+<li>
+<p>isalnum(c) 是否为字母或数字</p>
+</li>
+<li>
+<p>isdigit(c) 是否是数字</p>
+</li>
+<li>
+<p>isalpha(c) 是否是字母</p>
+<blockquote>
+<p>islower(c) 是否是小写字母</p>
+<p>isupper(c) 是否是大写字母</p>
+</blockquote>
+</li>
+<li>
+<p>ispunct(c) 是否是标点符号</p>
+</li>
+</ul>
+<h3 id="_4">字符大小写映射函数</h3>
+<ul>
+<li>
+<p>tolower(c) 将大写字母输入返回小写字母,其他字符不变</p>
+</li>
+<li>
+<p>toupper(c) 将小写字母输入返回大写字母,其他字符不变</p>
+</li>
+</ul>
+<h2 id="_5"><string.h> (会用的)</h2>
+<ul>
+<li>
+<p>strlen(s) 返回字符串长度,数到'\0',空字符不计入</p>
+</li>
+<li>
+<p>memset(*s,c,n),将字符c/数值c存储到字符串s/数组,从首位开始存n位</p>
+<blockquote>
+<p>将数组全部初始化为0 
+<code>memest(a,0,sizeof(a))</code></p>
+</blockquote>
+</li>
+</ul>
 
 
 
