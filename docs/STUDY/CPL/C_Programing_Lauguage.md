@@ -73,3 +73,33 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 
 >重点:与gets不同,当fgets读取的字符数小于n-1,则\n也会被读入进字符串内作为一个普通字符,printf时会打印回车.
 
+## <ctype.h>
+
+### 字符分类函数（返回0/1）(常用)
+
+- isalnum(c) 是否为字母或数字
+
+
+- isdigit(c) 是否是数字
+
+
+- isalpha(c) 是否是字母
+  > islower(c) 是否是小写字母
+  > 
+  > isupper(c) 是否是大写字母
+
+- ispunct(c) 是否是标点符号
+
+### 字符大小写映射函数
+
+- tolower(c) 将大写字母输入返回小写字母,其他字符不变
+
+- toupper(c) 将小写字母输入返回大写字母,其他字符不变
+
+## <string.h> (会用的)
+
+- strlen(s) 返回字符串长度,数到'\0',空字符不计入
+
+- memset(*s,c,n),将字符c/数值c存储到字符串s/数组,从首位开始存n位
+> 将数组全部初始化为0 
+> `memest(a,0,sizeof(a))`
