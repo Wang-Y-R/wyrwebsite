@@ -26,7 +26,7 @@ target_link_library(admin.c m)
 
 ## 输入
 
-### gets函数   from <stdio.h>
+### gets函数   from  ``<stdio.h>``
 
  `char *gets(char *str);`
  
@@ -73,9 +73,11 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 
 >重点:与gets不同,当fgets读取的字符数小于n-1,则\n也会被读入进字符串内作为一个普通字符,printf时会打印回车.
 
-## <ctype.h>
+## 字符处理
 
-### 字符分类函数（返回0/1）(常用)
+### ``<ctype.h>``
+
+#### 字符分类函数（返回0/1）(常用)
 
 - isalnum(c) 是否为字母或数字
 
@@ -90,13 +92,13 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 
 - ispunct(c) 是否是标点符号
 
-### 字符大小写映射函数
+#### 字符大小写映射函数
 
 - tolower(c) 将大写字母输入返回小写字母,其他字符不变
 
 - toupper(c) 将小写字母输入返回大写字母,其他字符不变
 
-## <string.h> (会用的)
+### ``<string.h>`` (会用的)
 
 - strcpy(s1,s2) 将s2字符串复制给s1
 >strncpy(s1,s2,n)将s2字符串最多复制n位给s1,建议n等于sizeof(s1)-1
@@ -118,6 +120,6 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 > 将数组全部初始化为0 
 > `memest(a,0,sizeof(a))`
 
-## <stdlib.h>
+### ``<stdlib.h>``
 
 - atoi(): int atoi(const char *str )将字符串转化为数字，直到遇见一个不是数字的字符
