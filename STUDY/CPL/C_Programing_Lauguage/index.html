@@ -543,8 +543,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gets-from" class="md-nav__link">
-    gets函数   from 
+  <a href="#gets-from-stdioh" class="md-nav__link">
+    gets函数   from  &lt;stdio.h&gt;
   </a>
   
 </li>
@@ -563,10 +563,18 @@
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    
+    字符处理
   </a>
   
-    <nav class="md-nav" aria-label="">
+    <nav class="md-nav" aria-label="字符处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ctypeh" class="md-nav__link">
+    ctype.h
+  </a>
+  
+    <nav class="md-nav" aria-label="ctype.h">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -587,17 +595,29 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-     (会用的)
+        
+          <li class="md-nav__item">
+  <a href="#stringh" class="md-nav__link">
+    string.h(会用的)
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stdlibh" class="md-nav__link">
+    stdlib.h
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    
+  <a href="#_5" class="md-nav__link">
+    其它
   </a>
   
 </li>
@@ -1096,8 +1116,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gets-from" class="md-nav__link">
-    gets函数   from 
+  <a href="#gets-from-stdioh" class="md-nav__link">
+    gets函数   from  &lt;stdio.h&gt;
   </a>
   
 </li>
@@ -1116,10 +1136,18 @@
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    
+    字符处理
   </a>
   
-    <nav class="md-nav" aria-label="">
+    <nav class="md-nav" aria-label="字符处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ctypeh" class="md-nav__link">
+    ctype.h
+  </a>
+  
+    <nav class="md-nav" aria-label="ctype.h">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1140,17 +1168,29 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-     (会用的)
+        
+          <li class="md-nav__item">
+  <a href="#stringh" class="md-nav__link">
+    string.h(会用的)
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stdlibh" class="md-nav__link">
+    stdlib.h
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    
+  <a href="#_5" class="md-nav__link">
+    其它
   </a>
   
 </li>
@@ -1193,7 +1233,7 @@ add_subdirectory(1-types-io)
 target_link_library(admin.c m)
 </code></pre>
 <h2 id="_2">输入</h2>
-<h3 id="gets-from">gets函数   from <stdio.h></h3>
+<h3 id="gets-from-stdioh">gets函数   from  <code>&lt;stdio.h&gt;</code></h3>
 <p><code>char *gets(char *str);</code></p>
 <blockquote>
 <p>效果简析:读入一行字符串(包括空格,不包括换行符),并清除缓冲区的换行符.</p>
@@ -1230,8 +1270,9 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 <p><code>fgets()</code>函数的最大读取大小是其“<code>第二个参数减1</code>”，这是由于字符串是以<code>’\0’</code>为结束符的，<code>fgets()</code>为了保证输入内容的<code>字符串格式</code>，当输入的数据大小超过了<code>第二个参数</code>指定的大小的时候，<code>fgets()</code>会仅仅读取前面的“<code>第二个参数减1</code>”个字符，而预留<code>1个字符</code>的空间来存储字符串结束符<code>’\0’</code>。</p>
 <p>重点:与gets不同,当fgets读取的字符数小于n-1,则\n也会被读入进字符串内作为一个普通字符,printf时会打印回车.</p>
 </blockquote>
-<h2 id="_3"><ctype.h></h2>
-<h3 id="01">字符分类函数（返回0/1）(常用)</h3>
+<h2 id="_3">字符处理</h2>
+<h3 id="ctypeh">ctype.h</h3>
+<h4 id="01">字符分类函数（返回0/1）(常用)</h4>
 <ul>
 <li>
 <p>isalnum(c) 是否为字母或数字</p>
@@ -1250,7 +1291,7 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 <p>ispunct(c) 是否是标点符号</p>
 </li>
 </ul>
-<h3 id="_4">字符大小写映射函数</h3>
+<h4 id="_4">字符大小写映射函数</h4>
 <ul>
 <li>
 <p>tolower(c) 将大写字母输入返回小写字母,其他字符不变</p>
@@ -1259,7 +1300,7 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 <p>toupper(c) 将小写字母输入返回大写字母,其他字符不变</p>
 </li>
 </ul>
-<h2 id="_5"><string.h> (会用的)</h2>
+<h3 id="stringh">string.h(会用的)</h3>
 <ul>
 <li>
 <p>strcpy(s1,s2) 将s2字符串复制给s1</p>
@@ -1299,9 +1340,13 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 </blockquote>
 </li>
 </ul>
-<h2 id="_6"><stdlib.h></h2>
+<h3 id="stdlibh">stdlib.h</h3>
 <ul>
 <li>atoi(): int atoi(const char *str )将字符串转化为数字，直到遇见一个不是数字的字符</li>
+</ul>
+<h2 id="_5">其它</h2>
+<ul>
+<li><code>static int a</code>  函数中静态本地变量,<strong><em>仅在第一次进行初始化</em></strong>,离开函数时依然存在,下一次进入函数值为上一次离开时的值.<strong><em>具有全局生存期，但作用域仅在此函数（与全局变量类似但不同）</em></strong></li>
 </ul>
 
 
