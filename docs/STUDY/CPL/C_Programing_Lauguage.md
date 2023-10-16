@@ -98,8 +98,26 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 
 ## <string.h> (会用的)
 
+- strcpy(s1,s2) 将s2字符串复制给s1
+>strncpy(s1,s2,n)将s2字符串最多复制n位给s1,建议n等于sizeof(s1)-1
+
+- strcat(s1,s2) 将s2字符串内容追加到s1
+>strncat(s1,s2,n)将s2字符串最多n位内容追加到s1,建议n等于sizeof(s1)-sizeof(s2)-1
+
+- strcmp(s1,s2) 比较s1和s2字符串
+> 比较顺序:每位ASCLL码顺位比较;位数大小比较,小于等于大于分别返回一个小于等于大于0的值
+
 - strlen(s) 返回字符串长度,数到'\0',空字符不计入
+
+- strchr(s,'a') 从字符串中从左向右搜索第一个字符'a'，并返回从这个'a'的指针,无则返回NULL
+> strrchr 表示从右向左搜索.
+
+- strstr字符串中搜索字符串，还没遇见过，用上了再说
 
 - memset(*s,c,n),将字符c/数值c存储到字符串s/数组,从首位开始存n位
 > 将数组全部初始化为0 
 > `memest(a,0,sizeof(a))`
+
+## <stdlib.h>
+
+- atoi(): int atoi(const char *str )将字符串转化为数字，直到遇见一个不是数字的字符
