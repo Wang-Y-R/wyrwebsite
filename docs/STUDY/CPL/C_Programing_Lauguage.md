@@ -75,7 +75,7 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 
 ## 字符处理
 
-### ``<ctype.h>``
+### ctype.h
 
 #### 字符分类函数（返回0/1）(常用)
 
@@ -98,7 +98,7 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 
 - toupper(c) 将小写字母输入返回大写字母,其他字符不变
 
-### ``<string.h>`` (会用的)
+### string.h(会用的)
 
 - strcpy(s1,s2) 将s2字符串复制给s1
 >strncpy(s1,s2,n)将s2字符串最多复制n位给s1,建议n等于sizeof(s1)-1
@@ -120,6 +120,10 @@ fgets(a, 100, stdin); //stdin 指缓冲区
 > 将数组全部初始化为0 
 > `memest(a,0,sizeof(a))`
 
-### ``<stdlib.h>``
+### stdlib.h
 
 - atoi(): int atoi(const char *str )将字符串转化为数字，直到遇见一个不是数字的字符
+
+## 其它
+
+- ``static int a``  函数中静态本地变量,***仅在第一次进行初始化***,离开函数时依然存在,下一次进入函数值为上一次离开时的值.***具有全局生存期，但作用域仅在此函数（与全局变量类似但不同）***
