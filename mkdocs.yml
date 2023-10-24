@@ -13,6 +13,7 @@ nav:
     - STUDY/index.md
     - C Programing Language :
       - STUDY/CPL/C_Programing_Lauguage.md
+      - STUDY/CPL/experience.md
     - Linux :
       - Linux命令 : STUDY/Linux/Linux命令.md
     - Windows Powershell :
