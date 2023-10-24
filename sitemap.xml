@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/CAPRICE/caprice/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/INDEX/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/LOG/log/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/STUDY/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/STUDY/CPL/C_Programing_Lauguage/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wang-y-r.github.io/wyrwebsite/STUDY/CPL/experience/</loc>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/STUDY/Linux/Linux%E5%91%BD%E4%BB%A4/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/STUDY/Vim_Vi/Vim_Vi%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/STUDY/md/just_a_try/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/STUDY/windows_powershell/Manual/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-y-r.github.io/wyrwebsite/TEST/test/</loc>
-         <lastmod>2023-10-16</lastmod>
+         <lastmod>2023-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
