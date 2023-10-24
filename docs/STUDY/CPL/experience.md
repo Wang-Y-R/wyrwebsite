@@ -43,7 +43,7 @@ int main() {
         }
     for (i = 0; i <= 8; i++)
         if (ans[i] != 0x7ffffff)
-        //一个正确的数独，后27位均为1，转化为16进制就是0xffffff
+        //一个正确的数独，后27位均为1，转化为16进制就是0x7ffffff
             flag = 1;
     printf("%s", flag ? "NO" : "YES");
     return 0;
